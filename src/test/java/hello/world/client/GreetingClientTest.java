@@ -10,12 +10,12 @@ import static org.junit.Assert.assertEquals;
 
 public class GreetingClientTest {
     private EmbeddedServer server;
-    private GreetingClient client;
+    private ConcreteGreetingClient client;
 
     @Before
     public void setup() {
         server = ApplicationContext.run(EmbeddedServer.class);
-        client = server.getApplicationContext().getBean(GreetingClient.class);
+        client = server.getApplicationContext().getBean(ConcreteGreetingClient.class);
     }
 
     @After
