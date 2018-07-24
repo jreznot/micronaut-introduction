@@ -1,0 +1,7 @@
+micronaut:
+    application:
+        name: hello-world-server
+                
+#Uncomment to set server port
+#    server:
+#        port: 8080
